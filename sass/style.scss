@@ -1,0 +1,115 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton{
+	background: black;
+	color: white;
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.boton-rojo{
+	@extend .boton;
+	background: red;
+}
+
+.boton-chico{
+	@extend .boton;
+	font-size: 14px;
+	padding: 5px 15px;
+}
+
+.boton-grande{
+	@extend .boton;
+	font-size: 20px;
+}
+
+.boton-linea{
+	@extend .boton;
+	background: none;
+	border: 1px solid #444;
+	color: #333;
+
+}
+
+.boton-x{
+	@extend .boton;
+	background: #456783;
+	transition: .5s;
+	&:hover{
+		background: darken(#456783,15%);
+		transform: scale(1.1);
+	}
+}
+
+@mixin box-shadow($offsetv, $offseth, $blur, $color){
+	-moz-box-shadow: $offsetv $offseth $blur $color;
+	-o-box-shadow: $offsetv $offseth $blur $color;
+	-ms-box-shadow: $offsetv $offseth $blur $color;
+	-webkit-box-shadow: $offsetv $offseth $blur $color;
+	box-shadow: $offsetv $offseth $blur $color;
+}
+
+@mixin border-radius($radio){
+	-moz-border-radius: $radio;
+	-o-border-radius: $radio;
+	-ms-border-radius: $radio;
+	-webkit-border-radius: $radio;
+	border-radius:$radio;
+}
+
+@mixin hacerCirculos($tamano, $color){
+	width: $tamano;
+	height: $tamano;
+	background: $color;
+	display: inline-block;
+	@include border-radius(50%);
+}
+
+.circulo{
+	@include hacerCirculos(100px, yellow);
+	@include box-shadow(5px, 5px, 10px, black);
+}
+
+.circulo1{
+	@include hacerCirculos(100px, red);
+}
+
+.circulo2{
+	@include hacerCirculos(200px, green);
+}
+
+.circulo3{
+	@include hacerCirculos(150px, grey);
+}
+
+@mixin hacerBoton($color_fondo, $radio_borde, $padding_vertical, $padding_lateral, $tamano_fuente){
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background: $color_fondo;
+	border-radius: $radio_borde;
+	padding: $padding_vertical $padding_lateral;
+	font-size: $tamano_fuente;
+	transition: 1s;
+	&:hover{
+		transform: scale(1.1);
+		background: darken($color_fondo, 15s)
+	}
+}
+
+.boton-mx1{
+	@include hacerBoton(blue, 3px, 2px, 2px, 10px);
+}
+
+.boton-mx2{
+	@include hacerBoton(pink, 5px, 10px, 5px, 15px);
+}
+
+.boton-mx3{
+	@include hacerBoton(lightblue, 40px, 50px, 20px, 40px);
+}

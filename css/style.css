@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton, .boton-x, .boton-linea, .boton-grande, .boton-chico, .boton-rojo {
+  background: black;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.boton-rojo {
+  background: red;
+}
+
+.boton-chico {
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+.boton-grande {
+  font-size: 20px;
+}
+
+.boton-linea {
+  background: none;
+  border: 1px solid #444;
+  color: #333;
+}
+
+.boton-x {
+  background: #456783;
+  transition: 0.5s;
+}
+.boton-x:hover {
+  background: #2b4051;
+  transform: scale(1.1);
+}
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  display: inline-block;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 5px 5px 10px black;
+  -o-box-shadow: 5px 5px 10px black;
+  -ms-box-shadow: 5px 5px 10px black;
+  -webkit-box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.circulo1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  display: inline-block;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.circulo2 {
+  width: 200px;
+  height: 200px;
+  background: green;
+  display: inline-block;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.circulo3 {
+  width: 150px;
+  height: 150px;
+  background: grey;
+  display: inline-block;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.boton-mx1 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: blue;
+  border-radius: 3px;
+  padding: 2px 2px;
+  font-size: 10px;
+  transition: 1s;
+}
+.boton-mx1:hover {
+  transform: scale(1.1);
+  background: #0000b3;
+}
+
+.boton-mx2 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: pink;
+  border-radius: 5px;
+  padding: 10px 5px;
+  font-size: 15px;
+  transition: 1s;
+}
+.boton-mx2:hover {
+  transform: scale(1.1);
+  background: #ff748c;
+}
+
+.boton-mx3 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: lightblue;
+  border-radius: 40px;
+  padding: 50px 20px;
+  font-size: 40px;
+  transition: 1s;
+}
+.boton-mx3:hover {
+  transform: scale(1.1);
+  background: #72bcd4;
+}
+
+/*# sourceMappingURL=style.css.map */
